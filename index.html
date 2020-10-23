@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -45,7 +45,7 @@
         </div>
         <div class="buttons">
           <a href="#">Votre avis</a>
-          <a href="#">Annonces</a>
+          <a href="/annonces.html">Annonces</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
     <div class="inner-width">
       <h1 class="section-title">Cours bonus</h1>
       <div class="about-content">
-        <i class="far fa-star bonus-pic"></i>
+        <i class="far fa-star bonus-pic" onclick="document.getElementById('welcomeTitle').innerHTML = 'Zuuuuuug Zuuuuug';document.getElementById('probability').innerHTML='MESSAGE POUR JULIETTE : Tu as triché et voilà maintenant on se moque de toi'"></i>
         <div class="about-text">
           <h2>Bienvenue dans le monde des cours bonus !</h2>
           <h3>
@@ -65,7 +65,12 @@
             <!-- <span>Youtuber</span> -->
           </h3>
           <p>
-            Suite au constat que de nombreuses personnes ne comprenaient pas les cours de diverses matières, nous avons commencé de manière désordonnée à nous entraider et à mettre en place des pseudos-cours. <br>Comme nous souhaitons nous organiser un peu mieux pour perpétuer ce système, nous y avons dédié une rubrique sur ce site. <br>Vous pouvez voir ci-dessous le pourcentage de place occupées dans les principaux prochains cours. Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la grande étoile.
+            Tu fais partie du FIMCS ? Tu as des lacunes dans certaines matières mais tu es un as dans d’autres ? Alors cette rubrique est faite pour toi !<br> 
+En un mot : ENTRAIDE. Ces cours bonus ont pour objectif de t’aider à comprendre diverses matières, selon tes besoins et surtout selon ta motivation. Tu peux également apporter ton aide aux autres dans tes matières favorites.<br>
+Après un début plutôt chaotique, nous avons enfin le moyen simple et pratique de les mettre en place et ainsi de perpétuer ce système d’échange né entre les élèves. <br>
+Comment ça marche ? C’est très simple ! Tu t’inscris via le site dans les matières nécessaires, et tu seras recontacté afin de trouver un horaire qui te convient. Tu peux aussi voir ci-dessous  le pourcentage des places occupées dans les prochains cours.<br>
+Alors, n’hésite plus, inscris-toi !<br>
+Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la grande étoile ou contactez Pierrick ou Mathilde.
           </p>
         </div>
       </div>
@@ -171,14 +176,14 @@
     <div class="inner-width">
       <h1 class="section-title">OBJECTIFS</h1>
       <div class="time-line">
-        <div class="block processing">
-          <h4>EN COURS</h4>
+        <div class="block done">
+          <h4>FAIT</h4>
           <h3>Design</h3>
           <p>La gestion de toute l'apparence du site (menus, données etc). Cela inclut aussi les catégories remplies de manière adaptée.</p>
         </div>
 
-        <div class="block notdone">
-          <h4>à faire</h4>
+        <div class="block processing">
+          <h4>EN COURS</h4>
           <h3>Créer les pdf des cours</h3>
           <p>Dans un premier temps, tous les cours ayant eu lieu depuis le début de l'année seront disponibles au format pdf. Ils seront ensuite mis de manière plus esthétique dans le site.</p>
         </div>
@@ -193,6 +198,18 @@
           <h4>à faire</h4>
           <h3>Base de données</h3>
           <p>Une base de données doit être conçue pour permettre une meilleure optimisation du site. Cela implique par exemple de pouvoir s'inscrire à un cours bonus sans passer par Google Forms.</p>
+        </div>
+
+        <div class="block notdone">
+          <h4>à faire</h4>
+          <h3>Comptes</h3>
+          <p>Les comptes permettront un accès privé au site pour éviter que n'importe qui ne s'y connecte. Ça permettra également les inscriptions aux cours</p>
+        </div>
+
+        <div class="block notdone">
+          <h4>à faire</h4>
+          <h3>Accès aux cours sans pdf</h3>
+          <p>Un accès aux cours sans pdf permettra d'y avoir accès sans créer de rupture par rapport aux graphismes du site. Toutefois, une version imprimable sera toujours disponible au format pdf.</p>
         </div>
       </div>
     </div>
@@ -285,6 +302,6 @@
 
   <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
-  <script src="js/scripts.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
