@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal webiste</title>
+  <title>FIMCS Accueil</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
@@ -38,14 +38,14 @@
       <div class="content">
         <h1 id="welcomeTitle">ERROR</h1>
         <div class="sm">
-          <a href="#" class="fas fa-user-circle"></a>
-          <a href="#" class="fas fa-star"></a>
-          <a href="#" class="fas fa-times-circle"></a>
-          <a href="#" class="far fa-calendar-check"></a>
+          <a style="cursor: not-allowed;" href="#" class="fas fa-user-circle"></a>
+          <a href="#bonus" class="fas fa-star"></a>
+          <a href="/absents.html" class="fas fa-times-circle"></a>
+          <a style="cursor: not-allowed;" href="#" class="far fa-calendar-check"></a>
         </div>
         <div class="buttons">
-          <a href="#">Votre avis</a>
-          <a href="/annonces.html">Annonces</a>
+          <a href="https://forms.gle/nRTgPL7kazibjWCU8" target="_BLANK">Votre avis</a>
+          <a href="/annonces.html">Annonces &nbsp 2</a>
         </div>
       </div>
     </div>
@@ -144,7 +144,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           <p>Un accès aux devoirs dont le contenu est mis à jour (quasiment) quotidiennement</p>
         </div>
 
-        <div class="service">
+        <div onclick="document.location.href='/absents.html'" class="service">
           <i class="icon fas fa-times-circle"></i>
           <h4>Profs absents</h4>
           <p>Un accès à la liste des profs absents jusque dans un moment</p>
@@ -156,7 +156,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           <p>Un accès à des cours bonus quand les notions vues en classe ne sont pas bien comprises</p>
         </div>
 
-        <div class="service">
+        <div onclick="document.location.href='/annonces.html'" class="service">
           <i class="icon fas fa-bullhorn"></i>
           <h4>Annonces</h4>
           <p>Un accès aux annonces officielles du site FIMCS ainsi que celles que vous voulez faire passer à la classe</p>
@@ -277,14 +277,14 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
     <div class="inner-width">
       <h1 class="section-title">contact</h1>
       <div class="contact-info">
-        <div class="item">
+        <div class="item" onclick="document.location.href='tel:+33647641083'">
           <i class="fas fa-mobile-alt"></i>
-          <a href="tel:+33647641083">+33 6 47 64 10 83</a>
+          <a>+33 6 47 64 10 83</a>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="document.location.href='mailto:pierrick.lesenne@outlook.fr'">
           <i class="fas fa-envelope"></i>
-          <a href="mailto:pierrick.lesenne@outlook.fr">pierrick.lesenne@outlook.fr</a>
+          <a>pierrick.lesenne@outlook.fr</a>
         </div>
       </div>
     </div>
