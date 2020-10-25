@@ -288,6 +288,67 @@ section.dark .section-title::after{
   background-color: #353b48;
   border: none;
 }
+
+span#mathilde::after {
+  display: none;
+}
+.time-line .block.done h4 {
+  color: #27ae60;
+}
+.time-line .block.done::after {
+  background-color: #27ae60;
+}
+.time-line .block.notdone h4 {
+  color: #c0392b;
+}
+.time-line .block.notdone::after {
+  background-color: #c0392b;
+}
+.time-line .block.processing h4 {
+  color: #e67e22;
+}
+.time-line .block.processing::after {
+  background-color: #e67e22;
+}
+table *{
+  border: 2px solid #05C5F0;
+  color: white;
+}
+table.absents * {
+  font-size: 28px;
+}
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+  width: 75%;
+}
+table.devoirs *{
+  font-size: 20px;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+tr {
+  transition: .3s;
+  cursor: pointer;
+}
+tr:hover {
+  background-color: #05C5F0;
+}
+tr.abi {
+  background-color: #c0392b;
+}
+tr.abi:hover {
+  background: #d35400;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.italic {
+  font-style: italic;
+}
 .services, .annonces{
   display: flex;
   justify-content: space-between;
@@ -536,55 +597,7 @@ footer{
   .nameZone, .emailZone{
     max-width: 100%;
   }
-}
-span#mathilde::after {
-  display: none;
-}
-.time-line .block.done h4 {
-  color: #27ae60;
-}
-.time-line .block.done::after {
-  background-color: #27ae60;
-}
-.time-line .block.notdone h4 {
-  color: #c0392b;
-}
-.time-line .block.notdone::after {
-  background-color: #c0392b;
-}
-.time-line .block.processing h4 {
-  color: #e67e22;
-}
-.time-line .block.processing::after {
-  background-color: #e67e22;
-}
-table * {
-  border: 2px solid #05C5F0;
-}
-table {
-  border-collapse: collapse;
-  margin-top: 15px;
-  width: 75%;
-}
-#absents table {
-  font-size: 28px;
-  color: white;
-}
-td {
-  padding: 10px;
-  text-align: center;
-}
-tr {
-  transition: .3s;
-  cursor: pointer;
-}
-tr:hover {
-  background-color: #05C5F0;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-.italic {
-  font-style: italic;
+  #absents * {
+    font-size: 20px;
+  }
 }
