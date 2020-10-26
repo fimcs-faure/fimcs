@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="/css/cours.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIMCS - Absents</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="/" class="logo"></a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="/index.html#accueil">Accueil</a>
+        <a href="/index.html#bonus">Bonus</a>
+        <a href="/index.html#services">Services</a>
+        <a href="/index.html#objectifs">Objectifs</a>
+        <a href="/index.html#matieres">Matières</a>
+        <a href="/index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cours SNT -->
+  <section id="snt" class="dark">
+    <div class="inner-width">
+      <h1 class="section-title">CHAPITRE 1 - LE LANGAGE PYTHON</h1>
+      
+      <h2>I) &nbsp Algorithme, machine :</h2>
+      <p>Un algorithme est une suite d’instructions ayant pour but de produire un résultat (calcul, image…).</p>
+      <p>On s’intéresse en SNT aux algorithmes programmés sur des machines.</p>
+      <p>Une machine en SNT comporte :</p>
+      <ul>
+          <li>Un processeur qui fait les calculs</li>
+          <li>Une mémoire (disque dur, RAM) qui conserve les données</li>
+          <li>Une interface qui permet à l’utilisateur d’entrer des données (clavier, souris, écran tactile…) et à la machine de communiquer des données (écran, écouteurs)</li>
+      </ul>
+
+      <h2>II) &nbsp Le langage Python, premiers pas :</h2>
+      <p>On a vu en TP quelques instructions liées au robot graphique Turtle</p>
+      <table>
+        <tr style="font-weight: bold;">
+            <td class="textcenter">Algorithme</td>
+            <td class="textcenter">Langage Python</td>
+        </tr>
+        <tr>
+            <td>Avancer de 100px <br>
+                Tourner de 60° vers la droite 
+            </td>
+            <td>
+                turtle.forward(100) <br>
+                turtle.right(60)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Répéter 8 fois : <br>
+                    &nbsp &nbsp &nbsp Avancer de 20px <br>
+                    &nbsp &nbsp &nbsp Tourner de 45° à gauche
+            </td>
+            <td>
+                for i in range(8) :<br>
+                    &nbsp &nbsp &nbsp turtle.forward(20)<br>
+                    &nbsp &nbsp &nbsp turtle.left(45) <br>
+                <div id="python-octagon" class="polygon octagon"></div>
+            </td>
+        </tr>
+      </table>
+      <p class="italic">Tracer un polygone régulier convexe à n côtés :</p>
+      <p class="code">def polygone(l,n) : <br>&nbsp &nbsp &nbsp turn=360/n<br>&nbsp &nbsp &nbsp for i in range(n): <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp turtle.forward(l)<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp turtle.left(turn)<br>polygone(100,5)</p>
+
+      <h2>III) &nbsp Types, variables :</h2>
+      <h3>Type entier :</h3>
+      <p>15 ; -258</p>
+      <p>Integer &rarr; <span class="red">int</span></p>
+      <br>
+
+      <h3>Type décimal flottant :</h3>
+      <p>0.0000128 = 1.28e-5</p>
+      <p>358 milliards = 3.58e11  Écriture Python pour 3,58*10<sup>11</sup></p>
+      <p class="red">float</p>
+      <br>
+
+      <h3>Type chaîne de caractères :</h3>
+      <p>"Je suis d’accord"</p>
+      <p>'Il fait beau'</p>
+      <p>character string &rarr; <span class="red">str</span></p>
+      <p class="italic">Concaténation :</p>
+      <p>a = "Il fait"+'beau'</p>
+      <p>print(a) &rarr; Il faitbeau</p>
+      <br>
+
+      <h3>Type booléen :</h3>
+      <p>Vrai/Faux</p>
+      <p>True/False</p>
+      <p>1/0</p>
+      <p>boolean &rarr; <span class="red">bool</span></p>
+
+      <table>
+          <tr>
+              <td class="textcenter" colspan="2">VARIABLES</td>
+          </tr>
+          <tr>
+              <td class="textcenter">
+                a &larr; 15 <br>
+                b &larr; -7 <br>
+                a &larr; a+b <br>
+                b &larr; a-b <br>
+                afficher (a, b) <br>
+              </td>
+              <td>
+                a = 15 <br>
+                b = -7 <br>
+                a = a+b <br>
+                b = a-b <br>
+                print(a, b) <br>
+              </td>
+          </tr>
+          <tr>
+              <td style="visibility: hidden;"></td>
+              <td><span style="border: none;" class="italic">Affiche : </span>8 15</td>
+          </tr>
+      </table>
+      <p>Echanger deux variables :</p>
+      <p>
+          x = 5 <br>
+          y = 10 <br>
+          a = x <br>
+          x = y <br>
+          y = a <br>
+          print(x,y) <br>
+          <span class="italic">Affichage : </span><span>10 5</span>
+      </p>
+
+      <h2>IV) &nbsp Structures de Python :</h2>
+      <h3>Alternative p.21 :</h3>
+      <table>
+          <tr>
+              <td>
+                  if x&lt;8: <br>
+                  &nbsp &nbsp &nbsp print(2*x) 
+              </td>
+              <td>Si x vaut 10, rien ne se passe, si x vaut 2, 4 s'affiche</td>
+          </tr>
+          <tr>
+              <td>
+                  if x==5: <br>
+                  &nbsp &nbsp &nbsp print(x+2)
+                  else:
+                  &nbsp &nbsp &nbsp print(x-2)
+              </td>
+              <td>Si x vaut 8, 6 s'affiche. <br> Si x vaut 5, 7 s'affiche</td>
+          </tr>
+      </table>
+
+      <h3>Boucle for :</h3>
+        <p>Ici 2 correspond au nombre de départ, 14 au nombre d’arrivée non atteint et 3 au pas</p>
+        <p class="code">for i in range(2, 14,3) : <br>
+            &nbsp &nbsp &nbsp print(i)
+        </p>
+        <span class="italic">Affichage : </span> <span>2 5 8 11</span> <span class="strikethrough">14</span>
+        <br>
+        <p class="code">for i in range(5,12): <br>
+            &nbsp &nbsp &nbsp print(i)            
+        </p>
+        <span class="italic">Affichage : </span><span>5 6 7 8 9 10 11 </span><span class="strikethrough">12</span>
+
+        <table>
+            <tr>
+                <td>
+                    for k in range(8):
+                    &nbsp &nbsp &nbsp print(k)
+                </td>
+                <td>for k in range(8) est équivalent à for k in range(0,8,1)</td>
+            </tr>
+            <tr>
+                <td colspan="2"><span class="italic">Affichage : </span> <span>0 1 2 3 4 5 6 7</span></td>
+            </tr>
+        </table>
+        <a class="fas fa-arrow-left back" href="/cours/snt.html"></a>
+    </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner-width">
+      <div class="copyright">
+        &copy; 2020 | Created & Designed By <a href="https://www.darkcode.info/" target="_BLANK">darkcode</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go Top BTN -->
+<button class="goTop fas fa-arrow-up"></button>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

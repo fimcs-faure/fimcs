@@ -81,6 +81,9 @@ a {
 a:hover {
   color: #05C5F0;
 }
+a.back {
+  font-size: 50px;
+}
 .item a {
   color: white;
 }

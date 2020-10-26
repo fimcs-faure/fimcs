@@ -1,0 +1,71 @@
+section.dark {
+    color: white;
+}
+*:not(li):not(section):not(footer):not(html):not(body) {
+    margin-bottom: 10px;
+}
+h2 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+}
+p {
+    text-align: justify;
+}
+p, li, span {
+    font-size: 20px;
+}
+section.dark ul {
+    list-style: none;
+}
+section.dark li::before {
+    content: "•"; 
+    color: white;
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+}
+table tr:hover {
+    background-color: transparent;
+    cursor: default;
+}
+td:not(.textcenter) {
+    text-align: left !important;
+}
+.polygon.octagon {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+#python-octagon {
+    background-color: #48dbfb;
+    width: 40px;
+    height: 40px;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.code {
+    background-color: #C3C3C3;
+    width: 100%;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+.green {
+    color: #27ae60;
+}
+.red {
+    color: #e74c3c;
+}
+.strikethrough {
+    text-decoration-line: line-through;
+}
+span {
+    border: none !important;
+}

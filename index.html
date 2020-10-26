@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -132,7 +132,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
     <div class="inner-width">
       <h1 class="section-title">SERVICES</h1>
       <div class="services">
-        <div class="service">
+        <div class="service" onclick="document.location.href='#matieres'">
           <i class="icon fas fa-user-graduate"></i>
           <h4>Cours</h4>
           <p>Un accès aux cours dont le contenu est mis à jour (quasiment) quotidiennement</p>
@@ -150,7 +150,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           <p>Un accès à la liste des profs absents jusque dans un moment</p>
         </div>
 
-        <div class="service">
+        <div class="service" onclick="document.location.href='#bonus'">
           <i class="icon fas fa-star"></i>
           <h4>Cours bonus</h4>
           <p>Un accès à des cours bonus quand les notions vues en classe ne sont pas bien comprises</p>
@@ -162,7 +162,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           <p>Un accès aux annonces officielles du site FIMCS ainsi que celles que vous voulez faire passer à la classe</p>
         </div>
 
-        <div class="service">
+        <div class="service" style="cursor: not-allowed;">
           <i class="icon fas fa-user-circle"></i>
           <h4>Compte</h4>
           <p>Un accès à votre compte et à toutes les informations qui y sont liées</p>
@@ -218,9 +218,34 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
   <!-- Works -->
   <section id="matieres" class="dark">
     <div class="inner-width">
-      <h1 class="section-title">matières</h1>
+      <h1 class="section-title">cours</h1>
       <div class="works">
-        <a href="#" class="work">
+        <a href="#" class="work" style="cursor: not-allowed;">
+          <img src="images/matieres/allemand.jpg" alt="">
+          <div class="info">
+            <h3>Allemand</h3>
+            <div class="cat">Leçons, Exercices...</div>
+          </div>
+        </a>
+
+        <a href="#" class="work" style="cursor: not-allowed;">
+          <img src="images/matieres/anglais.jpg" alt="">
+          <div class="info">
+            <h3>Anglais</h3>
+            <div class="cat">Exercices...</div>
+          </div>
+        </a>
+
+        <a href="#" class="work" style="cursor: not-allowed;">
+          <img src="images/matieres/emc.jpg" alt="">
+          <div class="info">
+            <h3>EMC</h3>
+            <div class="cat">Leçons, exercices...</div>
+          </div>
+        </a>
+        
+        
+        <a href="#" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/francais.jpg" alt="">
           <div class="info">
             <h3>Français</h3>
@@ -228,7 +253,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           </div>
         </a>
 
-        <a href="#" class="work">
+        <a href="#" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/maths.jpg" alt="">
           <div class="info">
             <h3>Maths</h3>
@@ -236,7 +261,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           </div>
         </a>
 
-        <a href="#" class="work">
+        <a href="#" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/physchim.jpg" alt="">
           <div class="info">
             <h3>Physique-chimie</h3>
@@ -244,7 +269,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           </div>
         </a>
 
-        <a href="#" class="work">
+        <a href="#" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/ses.jpg" alt="">
           <div class="info">
             <h3>SES</h3>
@@ -252,7 +277,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           </div>
         </a>
 
-        <a href="#" class="work">
+        <a href="" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/snt.jpg" alt="">
           <div class="info">
             <h3>SNT</h3>
@@ -260,7 +285,7 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
           </div>
         </a>
 
-        <a href="#" class="work">
+        <a href="#" class="work" style="cursor: not-allowed;">
           <img src="images/matieres/svt.jpg" alt="">
           <div class="info">
             <h3>SVT</h3>
@@ -302,6 +327,6 @@ Pour plus d'informations sur l'intégralité des cours prévus, cliquez sur la g
 
   <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
-<script src="js/index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
