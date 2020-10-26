@@ -336,11 +336,15 @@ tr {
 tr:hover {
   background-color: #05C5F0;
 }
-tr.abi {
-  background-color: #c0392b;
+td.abi {
+  position: relative;
 }
-tr.abi:hover {
-  background: #d35400;
+tr.abi td i {
+  transition: .3s;
+  border: none;
+}
+tr.abi:hover i {
+  color: #f1c40f;
 }
 .center {
   display: flex;
@@ -597,7 +601,7 @@ footer{
   .nameZone, .emailZone{
     max-width: 100%;
   }
-  #absents * {
-    font-size: 20px;
+  #absents table *, #devoirs table * {
+    font-size: 15px;
   }
 }
