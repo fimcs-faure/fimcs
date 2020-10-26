@@ -339,14 +339,19 @@ tr {
 tr:hover {
   background-color: #05C5F0;
 }
-td.abi {
-  position: relative;
-}
 tr.abi td i {
   transition: .3s;
   border: none;
 }
 tr.abi:hover i {
+  color: #f1c40f;
+}
+.work.abi .info h3 i {
+  transition: .3s;
+  color: white;
+  font-size: 20px;
+}
+.work.abi:hover .info h3 i {
   color: #f1c40f;
 }
 .center {
