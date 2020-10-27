@@ -386,7 +386,7 @@ tr.abi:hover i {
 }
 .services, .annonces{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .service{
