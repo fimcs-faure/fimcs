@@ -23,7 +23,7 @@ p, li, span {
 section.dark ul {
     list-style: none;
 }
-section.dark li::before {
+section.dark ul li::before {
     content: "•"; 
     color: white;
     display: inline-block; width: 1em;
@@ -56,12 +56,6 @@ td:not(.textcenter) {
     color: black;
     padding: 5px;
     border-radius: 15px;
-}
-.green {
-    color: #27ae60;
-}
-.red {
-    color: #e74c3c;
 }
 .strikethrough {
     text-decoration-line: line-through;
