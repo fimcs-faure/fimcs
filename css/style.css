@@ -208,6 +208,9 @@ section{
 .red {
   color: #e74c3c;
 }
+.orange {
+  color: #e67e22;
+}
 .about-content{
   display: flex;
   align-items: center;
