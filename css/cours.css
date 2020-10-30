@@ -57,9 +57,14 @@ td:not(.textcenter) {
     padding: 5px;
     border-radius: 15px;
 }
-.strikethrough {
-    text-decoration-line: line-through;
-}
 span {
     border: none !important;
+}
+.scroll {
+    position: fixed;
+    top: 78px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #48dbfb;
 }

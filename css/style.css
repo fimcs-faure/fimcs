@@ -203,13 +203,16 @@ section{
   bottom: -7px;
 }
 .green {
-  color: #27ae60;
+  color: #27ae60 !important;
 }
 .red {
-  color: #e74c3c;
+  color: #e74c3c !important;
+}
+.strikethrough {
+    text-decoration-line: line-through !important;
 }
 .orange {
-  color: #e67e22;
+  color: #e67e22 !important;
 }
 .about-content{
   display: flex;
@@ -371,11 +374,8 @@ tr.abi:hover i {
 }
 .work.abi .info h3 i {
   transition: .3s;
-  color: white;
-  font-size: 20px;
-}
-.work.abi:hover .info h3 i {
   color: #f1c40f;
+  font-size: 20px;
 }
 .center {
   display: flex;
