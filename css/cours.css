@@ -33,8 +33,9 @@ table tr:hover {
     background-color: transparent;
     cursor: default;
 }
-td:not(.textcenter) {
-    text-align: left !important;
+td {
+    text-align: center !important;
+    vertical-align: middle !important;
 }
 .polygon.octagon {
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -57,7 +58,7 @@ td:not(.textcenter) {
     padding: 5px;
     border-radius: 15px;
 }
-span {
+span, sup {
     border: none !important;
 }
 .scroll {
@@ -67,4 +68,11 @@ span {
     width: 0;
     height: 5px;
     background-color: #48dbfb;
+}
+table.line-highlight tr {
+    transition: .3s;
+    cursor: pointer;
+}
+table.line-highlight tr:hover {
+    background-color: #05C5F0;
 }
