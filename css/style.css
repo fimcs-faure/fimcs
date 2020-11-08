@@ -5,6 +5,7 @@
   outline: none;
   font-family: "Ubuntu",sans-serif;
   box-sizing: border-box;
+  background-repeat: no-repeat;
 }
 body {
   overflow-x: hidden;
@@ -45,8 +46,8 @@ h1, h4 {
   justify-content: space-between;
 }
 .logo{
-  width: 44px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
   background-image: url(../images/white-logo.png);
   background-size: contain;
 }

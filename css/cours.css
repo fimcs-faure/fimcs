@@ -79,3 +79,6 @@ table.line-highlight tr {
 table.line-highlight tr:hover {
     background-color: #05C5F0;
 }
+img {
+    border-radius: 15px;
+}
