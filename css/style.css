@@ -79,6 +79,9 @@ h1, h4 {
 .navbar-menu a:hover{
   color: #48dbfb !important;
 }
+.cours-info span {
+  text-transform: uppercase;
+}
 a {
   color: #48dbfb;
   transition: .3s linear;
@@ -295,13 +298,13 @@ section{
   width: 0%;
 }
 .cours-two:after{
-  width: 0%;
+  width: 83.33%;
 }
 .cours-three:after{
-  width: 0%;
+  width: 50%;
 }
 .cours-four:after{
-  width: 0%;
+  width: 66.6%;
 }
 .cours-five:after{
   width: 0%;
