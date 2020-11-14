@@ -1,0 +1,45 @@
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.class {
+    border-radius: 6px;
+    border: 1px solid #48dbfb;
+    color: #fff;
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+    transition: .4s;
+    display: flex;
+}
+a.abi, a.abi:hover {
+    color: #f1c40f;
+}
+.class img {
+    margin-left: 10px;
+    width: 48%;
+}
+.class .content {
+    float: right;
+    width: calc(50%-250px);
+    padding-left: 50px;
+    vertical-align: middle;
+}
+.class .content h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.class .content ul {
+    margin-top: 15px;
+    font-size: 20px;
+}
+.class .content ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.class .content ul li::before {
+    content: '•';
+    margin-right: 5px;
+}

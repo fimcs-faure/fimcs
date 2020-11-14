@@ -294,11 +294,15 @@ section{
   background-color: #48dbfb;
   bottom: 0;
 }
+.cours-bar.complet::after {
+  background-color: #c0392b;
+  width: 100%;
+}
 .cours-one:after{
-  width: 0%;
+  width: 25%;
 }
 .cours-two:after{
-  width: 83.33%;
+  width: 100%;
 }
 .cours-three:after{
   width: 50%;
@@ -327,10 +331,6 @@ section.dark .section-title::after{
 #vos-annonces div div div.service {
   background-color: #353b48;
   border: none;
-}
-
-span#mathilde::after {
-  display: none;
 }
 .time-line .block.done h4 {
   color: #27ae60;
