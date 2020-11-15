@@ -23,6 +23,26 @@ html{
 ::-webkit-scrollbar-thumb{
   background-color: #353b48;
 }
+#annonce-flash {
+  background-color: #353b48;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 99999999999999999999999999;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 25ox;
+}
+.annonce-flash, .annonce-flash h1 {
+  color: white;
+}
+.annonce-flash {
+  padding: 10px;
+}
 h1, h4 {
   text-transform: uppercase;
 }
@@ -166,6 +186,17 @@ a.button {
   transition: .3s linear;
   background: transparent;
   margin: 15px;
+  cursor: pointer;
+}
+.hideFlash {
+  font-size: 40px;
+  color: #FAFAFA;
+  transition: .4s linear;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.hideFlash:hover {
+  color: #48dbfb;
 }
 a.button:hover {
   background-color: #05C5F0;
@@ -194,7 +225,7 @@ section{
   padding-bottom: 20px;
   color: #111;
 }
-.section-title::before{
+.section-title::before {
   content: "";
   position: absolute;
   width: 80px;
@@ -203,7 +234,7 @@ section{
   bottom: 0;
   left: calc(50% - 40px);
 }
-.section-title::after{
+.section-title::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -319,13 +350,13 @@ section{
 section.dark{
   background-color: #353b48;
 }
-section.dark .section-title{
+section.dark .section-title, .annonce-flash .section-title{
   color: #f1f1f1;
 }
-section.dark .section-title::before{
+section.dark .section-title::before, .annonce-flash .section-title::before {
   background-color: #f1f1f1;
 }
-section.dark .section-title::after{
+section.dark .section-title::after, .annonce-flash .section-title::after{
   border: 4px solid #353b48;
 }
 #vos-annonces div div div.service {
