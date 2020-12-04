@@ -23,9 +23,9 @@ $(document).ready(function(){
 function hideFlash(){
   document.getElementById('annonce-flash').style="display: none;"
 }
-setTimeout(() => {
-  hideFlash()
-}, 10000)
+// setTimeout(() => {
+//   hideFlash()
+// }, 10000)
 
 // Titre responsive :
 

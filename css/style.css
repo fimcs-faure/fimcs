@@ -330,8 +330,8 @@ section{
   width: 100%;
 }
 .cours-one:after{
-  width: 75%;
-  background-color: #e67e22;
+  width: 0%;
+  /* background-color: #e67e22; */
 }
 .cours-two:after{
   width: 100%;
