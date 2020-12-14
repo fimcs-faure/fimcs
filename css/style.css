@@ -330,20 +330,20 @@ section{
   width: 100%;
 }
 .cours-one:after{
-  width: 0%;
+  width: 37.5%;
   /* background-color: #e67e22; */
 }
 .cours-two:after{
-  width: 100%;
+  width: 25%;
 }
 .cours-three:after{
-  width: 50%;
+  width: 20%;
 }
 .cours-four:after{
-  width: 66.6%;
+  width: 20%;
 }
 .cours-five:after{
-  width: 0%;
+  width: 40%;
 }
 .cours-six:after{
   width: 0%;
